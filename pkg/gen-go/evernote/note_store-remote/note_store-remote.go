@@ -5,10 +5,10 @@ package main
 
 import (
 	"context"
-	"evernote"
 	"flag"
 	"fmt"
 	"github.com/apache/thrift/lib/go/thrift"
+	"github.com/spqa/everterm/pkg/gen-go/evernote"
 	"math"
 	"net"
 	"net/url"

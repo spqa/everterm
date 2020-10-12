@@ -15,7 +15,7 @@ git clone --depth=1 https://github.com/evernote/evernote-thrift
 # generate code
 for file in ./evernote-thrift/src/*.thrift;
 do
-    thrift -gen go:package=evernote -o ./pkg ${file}
+    thrift -gen go:package=evernote,package_prefix=github.com/spqa/everterm/pkg/gen-go/ -o ./pkg ${file}
 done    
 
 # clean up
